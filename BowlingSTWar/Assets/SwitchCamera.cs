@@ -14,6 +14,21 @@ public class SwitchCamera : MonoBehaviour
         playerCamera.enabled = true;
         gameCamera.enabled = false;
         player = GetComponent<Player>();
+
+        // Subscribe to the event
+        player.OnIsPlayingChanged += OnIsPlayingChangedHandler;
+    }
+
+    void OnDestroy()
+    {
+        // Unsubscribe from the event to avoid memory leaks
+        player.OnIsPlayingChanged -= OnIsPlayingChangedHandler;
+    }
+
+    void OnIsPlayingChangedHandler(bool newValue)
+    {
+        playerCamera.enabled = !newValue;
+        gameCamera.enabled = newValue;
     }
 
     // Update is called once per frame

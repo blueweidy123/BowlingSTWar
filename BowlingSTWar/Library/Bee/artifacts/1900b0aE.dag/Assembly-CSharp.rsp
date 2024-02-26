@@ -363,6 +363,7 @@
 "Assets/MouseLook.cs"
 "Assets/Player.cs"
 "Assets/PlayerMovement.cs"
+"Assets/ResetGame.cs"
 "Assets/SmootFollow.cs"
 "Assets/SwitchCamera.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
