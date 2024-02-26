@@ -384,6 +384,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BowlingPin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
+      propertyPath: m_TagString
+      value: BowlingPin
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -394,6 +398,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1475616703}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1475616706}
   m_SourcePrefab: {fileID: 100100000, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
 --- !u!4 &223203288 stripped
 Transform:
@@ -463,6 +470,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
       propertyPath: m_Name
       value: BowlingPin (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
+      propertyPath: m_TagString
+      value: BowlingPin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -836,6 +847,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BowlingPin (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
+      propertyPath: m_TagString
+      value: BowlingPin
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1018,6 +1033,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BowlingPin (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
+      propertyPath: m_TagString
+      value: BowlingPin
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1092,6 +1111,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
       propertyPath: m_Name
       value: BowlingPin (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
+      propertyPath: m_TagString
+      value: BowlingPin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1240,7 +1263,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1260,6 +1283,8 @@ RectTransform:
   - {fileID: 1276228908}
   - {fileID: 1296732502}
   - {fileID: 1171519647}
+  - {fileID: 1573181432}
+  - {fileID: 801276375}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1353,13 +1378,13 @@ Transform:
   - {fileID: 223203288}
   - {fileID: 1478552387}
   - {fileID: 1708137775}
-  - {fileID: 1490864342}
   - {fileID: 1681751242}
   - {fileID: 146194274}
   - {fileID: 1904842512}
   - {fileID: 141985135}
   - {fileID: 395279644}
   - {fileID: 1166514240}
+  - {fileID: 1490864342}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &703067721
@@ -1384,11 +1409,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.352
+      value: 9.351998
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6
+      value: 1.5999999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1425,6 +1450,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
       propertyPath: m_Name
       value: BowlingPin (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
+      propertyPath: m_TagString
+      value: BowlingPin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1557,6 +1586,140 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.03016276, y: 0.009864423, z: 0.01237797}
   m_Center: {x: -0.0000365912, y: 0.0014167742, z: 0.00040365173}
+--- !u!1 &801276374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 801276375}
+  - component: {fileID: 801276377}
+  - component: {fileID: 801276376}
+  m_Layer: 5
+  m_Name: FallenPin
+  m_TagString: Poing
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &801276375
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801276374}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 428798468}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &801276376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801276374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &801276377
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801276374}
+  m_CullTransparentMesh: 1
 --- !u!1 &826246920 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1530722883249496155, guid: 7629056f3bf54e449b6ad52976bb7f9a, type: 3}
@@ -1646,6 +1809,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
       propertyPath: m_Name
       value: BowlingPin (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
+      propertyPath: m_TagString
+      value: BowlingPin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1747,6 +1914,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
       propertyPath: m_Name
       value: BowlingPin (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
+      propertyPath: m_TagString
+      value: BowlingPin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2209,7 +2380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6, g: 0.6, b: 0.5921569, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2316,9 +2487,10 @@ GameObject:
   - component: {fileID: 1242823656}
   - component: {fileID: 1242823660}
   - component: {fileID: 1242823661}
+  - component: {fileID: 1242823662}
   m_Layer: 0
   m_Name: Bowling Ball
-  m_TagString: Untagged
+  m_TagString: BowlingBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2449,6 +2621,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 400
+--- !u!95 &1242823662
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242823654}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 405e847675382ce42be2f863db6af509, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1263886100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2512,6 +2705,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
       propertyPath: m_Name
       value: BowlingPin (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
+      propertyPath: m_TagString
+      value: BowlingPin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2846,6 +3043,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1475616706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475616699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57d800cfc70e488488c091a54206f754, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1478552386 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
@@ -2990,6 +3199,162 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.030162752, y: 0.009864423, z: 0.012377967}
   m_Center: {x: -0.000036613543, y: 0.0014167733, z: 0.0004036442}
+--- !u!1 &1573181431
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1573181432}
+  - component: {fileID: 1573181435}
+  - component: {fileID: 1573181434}
+  - component: {fileID: 1573181433}
+  m_Layer: 5
+  m_Name: Feedback
+  m_TagString: Feedback
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1573181432
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573181431}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 428798468}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1573181433
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573181431}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d2f84c6013bf6c6448a7c2d8b6b65bfe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1573181434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573181431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1573181435
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573181431}
+  m_CullTransparentMesh: 1
 --- !u!1 &1578388889
 GameObject:
   m_ObjectHideFlags: 0
@@ -3158,6 +3523,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
       propertyPath: m_Name
       value: BowlingPin (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6ce002f281828f84cbb0213929f46797, type: 3}
+      propertyPath: m_TagString
+      value: BowlingPin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
