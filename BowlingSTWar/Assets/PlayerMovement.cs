@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (player.isPlaying)
+        if (!player.isPlaying)
         {
             float x = Input.GetAxis("Horizontal");
             float z = Input.GetAxis("Vertical");
