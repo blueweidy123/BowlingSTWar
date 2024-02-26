@@ -6,23 +6,23 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public CharacterController controller;
-
     public float speed = 12f;
     public float gravity = -9.81f;
 
     Vector3 velocity;
 
     public SwitchCamera switchCamera;
+    public Player player;
 
     // Start is called before the first frame update
     void Start()
     {
-        switchCamera = GetComponent<SwitchCamera>();
+         player = GetComponent<Player>();
     }
 
     void Update()
     {
-        if (switchCamera.isGameCameraActive)
+        if (player.isPlaying)
         {
             float x = Input.GetAxis("Horizontal");
             float z = Input.GetAxis("Vertical");
