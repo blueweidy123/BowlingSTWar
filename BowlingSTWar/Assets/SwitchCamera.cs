@@ -7,12 +7,13 @@ public class SwitchCamera : MonoBehaviour
     public Camera playerCamera;
     public Camera gameCamera;
 
-    public bool isGameCameraActive = false;
+    public Player player;
     // Start is called before the first frame update
     void Start()
     {
         playerCamera.enabled = true;
         gameCamera.enabled = false;
+        player = GetComponent<Player>();
     }
 
     // Update is called once per frame
@@ -20,10 +21,10 @@ public class SwitchCamera : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            isGameCameraActive = !isGameCameraActive;
+            player.isPlaying = !player.isPlaying;
 
-            playerCamera.enabled = isGameCameraActive;
-            gameCamera.enabled = !isGameCameraActive;
+            playerCamera.enabled = player.isPlaying;
+            gameCamera.enabled = !player.isPlaying;
         }
     }
 }
