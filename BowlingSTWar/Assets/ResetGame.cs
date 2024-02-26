@@ -9,7 +9,11 @@ public class ResetGame : MonoBehaviour
 
     public void ResetGameLevel()
     {
-        Destroy(GameObject.FindGameObjectWithTag("BowlingPin"));
+        GameObject[] pins = GameObject.FindGameObjectsWithTag("BowlingPin");
+        foreach (GameObject pin in pins)
+        {
+            Destroy(pin);
+        }
         Destroy(GameObject.FindGameObjectWithTag("BowlingBall"));
 
         InstantiateObjectOnClick();
