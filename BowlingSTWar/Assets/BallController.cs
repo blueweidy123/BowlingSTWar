@@ -18,8 +18,11 @@ public class BallController : MonoBehaviour
     private List<GameObject> _pins = new();
     private readonly Dictionary<GameObject, Transform> _pinsDefaultTransform = new();
     [SerializeField] private Animator cameraAnim;
+    public Player player;
+    
     void Start()
     {
+        player = GetComponent<Player>();
         rb = GetComponent<Rigidbody>();
         _pins = GameObject.FindGameObjectsWithTag("BowlingPin").ToList();
         _startPosition = transform;
@@ -84,8 +87,7 @@ public class BallController : MonoBehaviour
         };
 
 
-        GameObject.FindGameObjectWithTag("Feedback").GetComponent<TextMeshProUGUI>().text = $"{feedBack.text}";
-        //feedBack.GetComponent<Animator>().SetTrigger("Feedback");
-        feedBack.GetComponent<Animator>().Play("Show", -1, 0f);
+        //GameObject.FindGameObjectWithTag("Feedback").GetComponent<TextMeshProUGUI>().text = $"{feedBack.text}";
+        feedBack.GetComponent<Animator>().SetTrigger("Show");
     }
 }
