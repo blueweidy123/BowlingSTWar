@@ -23,8 +23,8 @@ public class SwitchCamera : MonoBehaviour
         {
             player.isPlaying = !player.isPlaying;
 
-            playerCamera.enabled = player.isPlaying;
-            gameCamera.enabled = !player.isPlaying;
+            playerCamera.enabled = !player.isPlaying;
+            gameCamera.enabled = player.isPlaying;
         }
     }
 }
