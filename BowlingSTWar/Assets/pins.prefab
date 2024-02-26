@@ -153,6 +153,8 @@ MonoBehaviour:
   isFallen: 0
   limit: 0.4
   pinBody: {fileID: 5027842968753690555}
+  cameraAnim: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &2956954088071599343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,6 +183,8 @@ MonoBehaviour:
   isFallen: 0
   limit: 0.4
   pinBody: {fileID: 0}
+  cameraAnim: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &6060778024228798720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,6 +350,8 @@ MonoBehaviour:
   isFallen: 0
   limit: 0.4
   pinBody: {fileID: 669896204301928243}
+  cameraAnim: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &8532458341494059386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,6 +380,8 @@ MonoBehaviour:
   isFallen: 0
   limit: 0.4
   pinBody: {fileID: 0}
+  cameraAnim: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &2669389262643277598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -539,6 +547,8 @@ MonoBehaviour:
   isFallen: 0
   limit: 0.4
   pinBody: {fileID: -8679921383154817045}
+  cameraAnim: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &6802650230016221424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -567,6 +577,8 @@ MonoBehaviour:
   isFallen: 0
   limit: 0.4
   pinBody: {fileID: 0}
+  cameraAnim: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &479704772076187639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -732,6 +744,8 @@ MonoBehaviour:
   isFallen: 0
   limit: 0.4
   pinBody: {fileID: 581552143683409783}
+  cameraAnim: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &9165035378150966081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -760,6 +774,8 @@ MonoBehaviour:
   isFallen: 0
   limit: 0.4
   pinBody: {fileID: 0}
+  cameraAnim: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &7006620611377990335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -925,6 +941,8 @@ MonoBehaviour:
   isFallen: 0
   limit: 0.4
   pinBody: {fileID: 9116103802435774123}
+  cameraAnim: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &811685874696056478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -953,6 +971,8 @@ MonoBehaviour:
   isFallen: 0
   limit: 0.4
   pinBody: {fileID: 0}
+  cameraAnim: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &4588905991695178202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1118,6 +1138,8 @@ MonoBehaviour:
   isFallen: 0
   limit: 0.4
   pinBody: {fileID: 4675818445100384199}
+  cameraAnim: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &2505120901997902426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1146,6 +1168,8 @@ MonoBehaviour:
   isFallen: 0
   limit: 0.4
   pinBody: {fileID: 0}
+  cameraAnim: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &297215599733881264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1311,6 +1335,8 @@ MonoBehaviour:
   isFallen: 0
   limit: 0.4
   pinBody: {fileID: 6302383747335168131}
+  cameraAnim: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &2856783062650847136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1339,6 +1365,8 @@ MonoBehaviour:
   isFallen: 0
   limit: 0.4
   pinBody: {fileID: 0}
+  cameraAnim: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &465880125432628752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1504,6 +1532,8 @@ MonoBehaviour:
   isFallen: 0
   limit: 0.4
   pinBody: {fileID: 5725925533942278207}
+  cameraAnim: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &6073734420808560399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1532,6 +1562,8 @@ MonoBehaviour:
   isFallen: 0
   limit: 0.4
   pinBody: {fileID: 0}
+  cameraAnim: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &1624628564414947803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1555,7 +1587,7 @@ GameObject:
   - component: {fileID: 7265309852122036980}
   m_Layer: 0
   m_Name: pins
-  m_TagString: BowlingPin
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1738,6 +1770,8 @@ MonoBehaviour:
   isFallen: 0
   limit: 0.4
   pinBody: {fileID: 7125602706919111150}
+  cameraAnim: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &7581694312738925924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1766,6 +1800,8 @@ MonoBehaviour:
   isFallen: 0
   limit: 0.4
   pinBody: {fileID: 0}
+  cameraAnim: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &8045564059434654079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1931,6 +1967,8 @@ MonoBehaviour:
   isFallen: 0
   limit: 0.4
   pinBody: {fileID: 5847726897143805590}
+  cameraAnim: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &5030860941377320302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1959,6 +1997,8 @@ MonoBehaviour:
   isFallen: 0
   limit: 0.4
   pinBody: {fileID: 0}
+  cameraAnim: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &2828213679169900823
 MonoBehaviour:
   m_ObjectHideFlags: 0
