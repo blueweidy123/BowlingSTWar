@@ -18,6 +18,10 @@ public class BallController : MonoBehaviour
     private List<GameObject> _pins = new();
     private readonly Dictionary<GameObject, Transform> _pinsDefaultTransform = new();
     [SerializeField] private Animator cameraAnim;
+
+    public GameObject Marcador;
+    public GameObject Direction;
+    Vector3 launchDirection;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -28,10 +32,14 @@ public class BallController : MonoBehaviour
             _pinsDefaultTransform.Add(pin, pin.transform);
         }
         feedBack = GameObject.FindGameObjectWithTag("FeedBack").GetComponent<TextMeshProUGUI>();
-    }
 
-    void Update()
+        //animn = GetComponent<Animator>();
+    }
+    void FixedUpdate()
     {
+        //launchDirection = Marcador.GetComponent<Transform>().position;
+        //Debug.Log("launchDirection.ToString() = " + launchDirection.ToString());
+        //Debug.Log("GetComponent<Transform>().ToString() = " + GetComponent<Transform>().position.ToString());
         //if (Input.GetButtonUp("Fire1"))
         //{
         //    ShootBall();
@@ -46,11 +54,18 @@ public class BallController : MonoBehaviour
             StartCoroutine(Shoot());
         }
     }
-
     void ShootBall()
     {
-        rb.AddForce(transform.forward * force, ForceMode.Impulse);
+        //Vector3 dir = launchDirection - GetComponent<Transform>().position;
+        //rb.AddForce(transform.forward * force, ForceMode.Impulse);
+        //rb.AddForce(-Vector3.forward * force, ForceMode.Impulse);
+        ///
 
+        launchDirection = Marcador.GetComponent<Transform>().position;
+        //Debug.Log("launchDirection.ToString() = " + launchDirection.ToString());
+        //launchDirection.y = -3.898f;
+        rb.AddForce(-launchDirection * force, ForceMode.Impulse);
+        Direction.SetActive(false);
 
     }
     private IEnumerator Shoot()
