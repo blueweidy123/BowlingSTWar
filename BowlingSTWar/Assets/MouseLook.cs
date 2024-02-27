@@ -58,4 +58,18 @@ public class MouseLook : MonoBehaviour
         Cursor.lockState = menuCanvas.enabled ? CursorLockMode.Locked : CursorLockMode.None;
         menuCanvas.enabled = !menuCanvas.enabled;
     }
+
+    public void HideMenu()
+    {
+        string tagToHide = "button";
+        foreach (Transform child in menuCanvas.transform)
+        {
+            // Check if the child object has the specified tag
+            if (child.CompareTag(tagToHide))
+            {
+                // Disable the child object
+                child.gameObject.SetActive(false);
+            }
+        }
+    }
 }

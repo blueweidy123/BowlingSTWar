@@ -1,97 +1,4 @@
-﻿//using System.Collections;
-//using System.Collections.Generic;
-//using System.Drawing;
-//using System.Linq;
-//using TMPro;
-//using UnityEngine;
-//using UnityEngine.SceneManagement;
-
-//public class BallController : MonoBehaviour
-//{
-//    //chỉnh mass thành 20, force là 400 sẽ giống thật nhất
-//    Rigidbody rb;
-//    public float force = 400f;
-//    private bool _ballMoving;
-//    private Transform _startPosition;
-//    public int Point { get; set; }
-//    private TextMeshProUGUI feedBack;
-//    private List<GameObject> _pins = new();
-//    private readonly Dictionary<GameObject, Transform> _pinsDefaultTransform = new();
-//    [SerializeField] private Animator cameraAnim;
-//    void Start()
-//    {
-//        rb = GetComponent<Rigidbody>();
-//        _pins = GameObject.FindGameObjectsWithTag("BowlingPin").ToList();
-//        _startPosition = transform;
-//        foreach (var pin in _pins)
-//        {
-//            _pinsDefaultTransform.Add(pin, pin.transform);
-//        }
-//        feedBack = GameObject.FindGameObjectWithTag("FeedBack").GetComponent<TextMeshProUGUI>();
-//    }
-
-//    void Update()
-//    {
-//        //if (Input.GetButtonUp("Fire1"))
-//        //{
-//        //    ShootBall();
-//        //}
-//        if (_ballMoving)
-//        {
-//            return;
-//        }
-
-//        if (Input.GetKeyDown(KeyCode.Space))
-//        {
-//            StartCoroutine(Shoot());
-//        }
-//    }
-
-//    void ShootBall()
-//    {
-//        rb.AddForce(transform.forward * force, ForceMode.Impulse);
-
-
-//    }
-//    private IEnumerator Shoot()
-//    {
-//        _ballMoving = true;
-//        rb.isKinematic = false;
-//        ShootBall();
-//        yield return new WaitForSecondsRealtime(7);
-
-//        _ballMoving = false;
-//        GenerateFeedBack();
-//        yield return new WaitForSecondsRealtime(2);
-
-//        ResetGame();
-
-//    }
-//    private static void ResetGame()
-//    {
-//        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
-//    }
-//    private void GenerateFeedBack()
-//    {
-//        feedBack.text = Point switch
-//        {
-//            0 => "nothing",
-//            > 0 and < 3 => "You are learning now!",
-//            >= 3 and < 6 => "It was close!",
-//            >= 6 and < 10 => "It was nice!",
-//            _ => "Perfect! You are a master!"
-//        };
-
-
-//        GameObject.FindGameObjectWithTag("Feedback").GetComponent<TextMeshProUGUI>().text = $"{feedBack.text}";
-//        //feedBack.GetComponent<Animator>().SetTrigger("Feedback");
-//        feedBack.GetComponent<Animator>().Play("Show", -1, 0f);
-//    }
-//}
-
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -113,11 +20,21 @@ public class BallController : MonoBehaviour
     [SerializeField] private Animator cameraAnim;
 
     public GameObject Marcador;
+    public float followSpeed = 30f;
+    public float rotationSpeed = 30f;
+
     public GameObject Direction;
+    private ResetGame resetGame;
     Vector3 launchDirection;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        Marcador = GameObject.FindWithTag("Marcador");
+        if (Marcador == null)
+        {
+            Debug.LogError("Marcador GameObject not found.");
+        }
+
         _pins = GameObject.FindGameObjectsWithTag("BowlingPin").ToList();
         _startPosition = transform;
         foreach (var pin in _pins)
@@ -126,40 +43,60 @@ public class BallController : MonoBehaviour
         }
         feedBack = GameObject.FindGameObjectWithTag("FeedBack").GetComponent<TextMeshProUGUI>();
 
+        Marcador = GameObject.FindWithTag("Marcador");
+        if (Marcador == null)
+        {
+            Debug.LogError("Marcador GameObject not found.");
+        }
         //animn = GetComponent<Animator>();
     }
     void FixedUpdate()
     {
-        //launchDirection = Marcador.GetComponent<Transform>().position;
-        //Debug.Log("launchDirection.ToString() = " + launchDirection.ToString());
-        //Debug.Log("GetComponent<Transform>().ToString() = " + GetComponent<Transform>().position.ToString());
-        //if (Input.GetButtonUp("Fire1"))
-        //{
-        //    ShootBall();
-        //}
         if (_ballMoving)
         {
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             StartCoroutine(Shoot());
         }
+
+        // Find the object with the "Direction" tag
+        GameObject directionObject = GameObject.FindGameObjectWithTag("Direction");
+
+        // Check if the directionObject is not null
+        if (directionObject != null)
+        {
+            // Enable the object
+            directionObject.SetActive(true);
+        }
+
+        FollowMarcador();
     }
+
+
+    void FollowMarcador()
+    {
+        Vector3 directionToMarcador = Marcador.transform.position - transform.position;
+
+        directionToMarcador.y = 0f;
+
+        directionToMarcador.Normalize();
+
+        Quaternion targetRotation = Quaternion.LookRotation(directionToMarcador, Vector3.up);
+
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
+    }
+
+
     void ShootBall()
     {
-        //Vector3 dir = launchDirection - GetComponent<Transform>().position;
-        //rb.AddForce(transform.forward * force, ForceMode.Impulse);
-        rb.AddForce(-Vector3.forward * force, ForceMode.Impulse);
-        ///
+        Vector3 forwardDirection = transform.forward;
 
-        //launchDirection = Marcador.GetComponent<Transform>().position;
-        ////Debug.Log("launchDirection.ToString() = " + launchDirection.ToString());
-        ////launchDirection.y = -3.898f;
-        //rb.AddForce(-launchDirection * force, ForceMode.Impulse);
-        Direction.SetActive(false);
+        forwardDirection = Quaternion.Euler(0f, 10f, 0f) * forwardDirection;
 
+        rb.AddForce(forwardDirection * force, ForceMode.Impulse);
     }
     private IEnumerator Shoot()
     {
@@ -169,7 +106,6 @@ public class BallController : MonoBehaviour
         yield return new WaitForSecondsRealtime(7);
 
         _ballMoving = false;
-        GenerateFeedBack();
         yield return new WaitForSecondsRealtime(2);
 
         ResetGame();
@@ -177,23 +113,8 @@ public class BallController : MonoBehaviour
     }
     private static void ResetGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
 
     }
-    private void GenerateFeedBack()
-    {
-        feedBack.text = Point switch
-        {
-            0 => "nothing",
-            > 0 and < 3 => "You are learning now!",
-            >= 3 and < 6 => "It was close!",
-            >= 6 and < 10 => "It was nice!",
-            _ => "Perfect! You are a master!"
-        };
 
-
-        GameObject.FindGameObjectWithTag("Feedback").GetComponent<TextMeshProUGUI>().text = $"{feedBack.text}";
-        //feedBack.GetComponent<Animator>().SetTrigger("Feedback");
-        feedBack.GetComponent<Animator>().Play("Show", -1, 0f);
-    }
 }
