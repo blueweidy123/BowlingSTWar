@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
     public event IsPlayingChanged OnIsPlayingChanged;
     private ResetGame resetGame;
     private bool _isPlaying = false;
+
+
     public bool isPlaying
     {
         get { return _isPlaying; }

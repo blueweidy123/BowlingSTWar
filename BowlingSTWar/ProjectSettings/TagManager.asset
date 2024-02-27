@@ -9,6 +9,9 @@ TagManager:
   - Start
   - Poing
   - Feedback
+  - Marcador
+  - Direction
+  - button
   layers:
   - Default
   - TransparentFX

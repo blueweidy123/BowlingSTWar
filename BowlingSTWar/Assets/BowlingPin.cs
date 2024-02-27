@@ -55,7 +55,7 @@ public class BowlingPin : MonoBehaviour
         }
 
         // Update the UI or any other logic based on the points
-        GameObject.FindGameObjectWithTag("Poing").GetComponent<TextMeshProUGUI>().text = $"Number of fallen pins: {point}";
+        GameObject.FindGameObjectWithTag("Poing").GetComponent<TextMeshProUGUI>().text = $"Score: {point} / 10";
         GameObject.FindGameObjectWithTag("BowlingBall").GetComponent<BallController>().Point = point;
 
     }

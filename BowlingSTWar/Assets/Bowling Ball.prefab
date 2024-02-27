@@ -150,6 +150,8 @@ MonoBehaviour:
   force: 400
   cameraAnim: {fileID: 0}
   Marcador: {fileID: 0}
+  followSpeed: 30
+  rotationSpeed: 30
   Direction: {fileID: 0}
 --- !u!95 &5541514406547449667
 Animator:
